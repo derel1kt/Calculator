@@ -3,29 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Delivery</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="css/main.css">
     <script src="js/main.js" defer></script>
 </head>
 <body>
-    <div class="Hightlight">
-        <div class="Toptext">
-            Your Favorite Food,<br> Delivered Fast
+    <div class="container">
+        <div class ='calculator'>
+            <form class="calculator">
+                <div>
+                    <input id="result" type="text" name="display">
+                </div>
+                <div>
+                    <button type="button" onclick="display.value += '(' ">(</button>
+                    <button type="button" onclick="display.value += ')' ">)</button>
+                    <button type="button" onclick="display.value += '%' ">%</button>
+                    <button type="button" onclick="display.value = '' ">AC</button>
+                </div>
+                <div>
+                    <button type="button" onclick="display.value += '7' ">7</button>
+                    <button type="button" onclick="display.value += '8' ">8</button>
+                    <button type="button" onclick="display.value += '9' ">9</button>
+                    <button type="button" onclick="display.value += '/' ">/</button>
+                </div>
+                <div>
+                    <button type="button" onclick="display.value += '4' ">4</button>
+                    <button type="button" onclick="display.value += '5' ">5</button>
+                    <button type="button" onclick="display.value += '6' ">6</button>
+                    <button type="button" onclick="display.value += '*' ">*</button>
+                </div>
+                <div>
+                    <button type="button" onclick="display.value += '1' ">1</button>
+                    <button type="button" onclick="display.value += '2' ">2</button>
+                    <button type="button" onclick="display.value += '3' ">3</button>
+                    <button type="button" onclick="display.value += '-' ">-</button>
+                </div>
+                <div>
+                    <button type="button" onclick="display.value += '0' ">0</button>
+                    <button type="button" onclick="display.value += '.' ">.</button>
+                    <button type="button" onclick="display.value = eval(display.value)" class="equal">=</button>
+                    <button type="button" onclick="display.value += '+' ">+</button>
+                </div>
+            </form>
         </div>
-        <div class="Undertext">
-            Find the best restaurants in your city and get it delivered to your place!
-        </div>
-    </div>
-
-    <div class="image">
-        <img src="img/image.png" alt="boy">
-    </div>
-    
-    <form action="" method="get" id="form1">
-        <a href="categories.html" target="_self">
-        <button type="button" class="btn" id="button">Order Now!</button>
-        </a>
-    </form>
     </div>
 </body>
 </html>

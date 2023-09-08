@@ -1,86 +1,57 @@
 * {
-    margin: 0;
     padding: 0;
-}
-
-body {
-    background-color: rgb(57, 57, 57);
-}
-
-.Hightlight {
-    display: flex;
-    align-items:flex-start;
-    flex-direction: column;
-    justify-content: top;
-    text-align: center;
-}
-
-.Toptext {
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    color: white;
-    font-size: 64px;
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    font-size: large;
     font-weight: bold;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 140%;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    letter-spacing: -0.5px
 }
 
-.Undertext {
+.container {
     display: flex;
-    align-self: center;
+    align-items: center;
     justify-content: center;
+    background:rgb(38, 75, 105);
+    width: 100vw;
+    height: 100vh;
+}
+
+.calculator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+    background: rgb(20, 20, 20);
+    border: white 2px solid;
+    border-radius: 5px 5px 20px 20px;
+}
+
+input {
+    width: 320px;
+    height: 60px;
+    margin-bottom: 20px;
+    border: solid 0.5px white;
+    border-radius: 10px;
+    background: rgb(20, 20, 20);
+    box-shadow: 2.3px 1px 1px white;
     color: white;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
+    text-align: right;
+    padding-right: 10px;
 }
 
-.image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 27px;
-}
-
-img {
-    height: 800px;
-}
-
-#form1 {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    padding-top: 81px;
-    padding-left: 50px;
-}
-
-.btn {
-    align-items: center;
-    background-color: #FFAC4B;
-    height: 100px;
-    width: 500px;
-    border: rgb(57, 57, 57) solid 1px;
-    border-radius: 50px;
-    color: #191D21;
-    font-size: 32px;
-    font-style:normal;
-    font-weight:bold;
-    line-height: 36px;
-    font-family: 'Raleway', sans-serif;
-    letter-spacing: -0.5px;
+button {
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    box-shadow: 2.5px 1px 1px white;
+    background: rgb(27, 31, 28);
+    color: aliceblue;
+    border: solid rgb(27, 31, 28) 0.5px;
+    border-radius: 5px;
     cursor: pointer;
-    appearance: none;
 }
 
-.btn:hover {
-    background-color: #191D21;
-    color: white;
+button:hover {
+    background: rgb(17, 19, 19);
 }
